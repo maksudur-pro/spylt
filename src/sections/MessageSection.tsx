@@ -41,8 +41,9 @@ const MessageSection = () => {
     const revealTl = gsap.timeline({
       delay: 1,
       scrollTrigger: {
-        trigger: ".msg-text-scroll",
-        start: "top 60%",
+        trigger: ".message-content",
+        start: "top center",
+        end: "50% center",
         scrub: true,
       },
     });
@@ -55,7 +56,7 @@ const MessageSection = () => {
 
     const paragraphTl = gsap.timeline({
       scrollTrigger: {
-        trigger: ".message-content p",
+        trigger: ".second-message",
         start: "top center",
       },
     });
